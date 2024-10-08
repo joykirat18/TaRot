@@ -15,7 +15,7 @@ def rate_fluency(text_list):
             {"role": "system", "content": "You are a text evaluation assistant."},
             {"role": "user", "content": prompt}
         ]
-        rating = outputModel_Managed_LLM(GPT_4_O_API_ENPOINT, GPT_4_O_MODEL_NAME, messages)
+        rating = outputModel_LLM(GPT_4_O_API_ENPOINT, GPT_4_O_MODEL_NAME, messages)
         
         # Append the rating to the list
         fluency_ratings.append({text: rating})
